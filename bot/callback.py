@@ -28,7 +28,7 @@ async def cbguide(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-  await query.edit_message_text(f"✨ **Hello there, I am a telegram video streaming bot.**\n\n💭 **I was created to stream videos in group video chats easily.**\n\n❔ **To find out how to use me, please press the help button below** 👇🏻",
+  await query.edit_message_text(f"✨ **Hello there, I am a telegram video streaming bot. By SL MEADIA TECH**\n\n💭 **I was created to stream videos in group video chats easily.**\n\n❔ **To find out how to use me, please press the help button below** 👇🏻",
                                 reply_markup=InlineKeyboardMarkup(
                        [[
                           InlineKeyboardButton(
@@ -38,12 +38,12 @@ async def cbstart(_, query: CallbackQuery):
                              "🌐 Terms & Condition", callback_data="cbinfo")
                        ],[
                           InlineKeyboardButton(
-                             "💬 Group", url="https://t.me/VeezSupportGroup"),
+                             "💬 Group", url="https://t.me/SL_MEDIA_TECH_GRUOP"),
                           InlineKeyboardButton(
-                             "📣 Channel", url="https://t.me/levinachannel")
+                             "📣 Channel", url="https://t.me/sl_media_tech")
                        ],[
                           InlineKeyboardButton(
-                             "👩🏻‍💻 Developer", url="https://t.me/dlwrml")
+                             "👩🏻‍💻 Developer", url="https://t.me/Humangasor")
                        ],[
                           InlineKeyboardButton(
                              "📚 All Command List", callback_data="cblist")
@@ -58,13 +58,10 @@ async def cbinfo(_, query: CallbackQuery):
 
 🤖 __This bot was created to stream video in telegram group video chats using several methods from WebRTC.__
 
-💡 __Powered by PyTgcalls the Async client API for the Telegram Group Calls, and Pyrogram the telegram MTProto API Client Library and Framework in Pure Python for Users and Bots.__
+💡 __Powered by SL MEADIA TECH the Async client API for the Telegram Group Calls, and Pyrogram the telegram MTProto API Client Library and Framework in Pure Python for Users and Bots.__
 
 👨🏻‍💻 __Thanks to the developers who participated in the development of this bot, the list of devs can be seen below:__
 
-👩🏻‍✈️ » [Levina](https://github.com/levina-lab)
-🤵🏻 » [Sammy-XD](https://github.com/Sammy-XD)
-👩🏻‍✈️ » [Achu](https://github.com/Achu2234)
 
 __This bot licensed under GNU-GPL 3.0 License__""",
     reply_markup=InlineKeyboardMarkup(
