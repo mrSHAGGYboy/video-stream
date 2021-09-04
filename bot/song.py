@@ -279,7 +279,7 @@ async def vsong(_, message: Message):
             open(thumb_name, 'wb').write(thumb.content)
         except Exception as e:
             print(e)
-            await k.edit('❌ **video not found, please give a valid video name.\n\n» if you think this is an error report to @VeezSupportGroup**')
+            await k.edit('❌ **video not found, please give a valid video name.\n\n» if you think this is an error report to @SL_MEDIA_TECH_GRUOP**')
             return
     except Exception as e:
         await k.edit(
@@ -293,7 +293,7 @@ async def vsong(_, message: Message):
             info_dict = ydl.extract_info(link, download=False)
             video_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        caption = f"🏷 Name: {title}\n💡 Views: `{views}`\n🎧 Request by: {message.from_user.mention()}\n\n⚡ __Powered by Veez Project Team__"
+        caption = f"🏷 Name: {title}\n💡 Views: `{views}`\n🎧 Request by: {message.from_user.mention()}\n\n⚡ __Powered by SL MEADIA TECH__"
         buttons = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Close", callback_data="cls")]])
         await k.edit("📤 **uploading file...**")
         await message.reply_video(video_file, caption=caption, duration=duration, thumb=thumb_name, reply_markup=buttons, supports_streaming=True)
